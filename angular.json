@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tradeGod"
+    }
+  },
+  "defaultProject": "tradeGod",
+  "cli": {
+    "analytics": "bd03eb31-45d7-44c2-a2fc-7cc5ee12a194"
+  }
 }
