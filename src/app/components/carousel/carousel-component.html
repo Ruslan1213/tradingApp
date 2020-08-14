@@ -1,0 +1,31 @@
+
+<div class="container bg-light">
+  <div>
+  <h2 class="text-center">Trading is a best way to mooney</h2>
+  </div>
+    <div *ngIf="slides" id="carouselContent" class="carousel slide bg-chrome" data-ride="carousel">
+        <div class="carousel-inner text-white" role="listbox">          
+          <div
+          *ngFor="let s of slides; index as i; first as isFirst" 
+           [className]="isFirst ? 
+           'carousel-item align-items-center flex-column p-4 active' : 
+           'carousel-item align-items-center flex-column p-4'">
+
+            <img src="{{s.photoPath}}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>{{s.slideTitle}}</h1>
+              <p class="textBiggest">{{s.slideDescription}}</p>
+            </div>
+
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>

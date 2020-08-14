@@ -1,0 +1,11 @@
+.dark{ background-color: black; }
+
+.page-footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+   position: relative;
+   margin-bottom: 0%;
+}
